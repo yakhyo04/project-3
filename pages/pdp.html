@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Blade || PDP</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/pdp.css">
+    <link rel="stylesheet" href="../css/cart.css">
+
+    <!-- Swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+            
+    <!-- Script -->
+    <script src="../js/pdp.js" defer></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#">
+                            <img class="header__logo" src="../images/svg/logo.svg" alt="logo">
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Razors</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Shaving Supplies</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">Gifts</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">The Story</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">The Difference</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">More</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">
+                            <img class="header__image" src="../images/svg/profile.svg" alt="profile">
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">
+                            <img class="header__image cartOpen" src="../images/svg/cart.svg" alt="cart">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__hidden--list">
+                    <li class="header__item">
+                        <a class="header__link" href="#">
+                            <img class="header__logo header__menu" src="../images/svg/menu.svg" alt="logo">
+                        </a>
+                    </li>
+                    <ul class="header__submenu">
+                        <a class="header__subitem--close--icon" href="#">x</a>
+                        <li class="header__subitem">
+                            <a class="header__sublink" href="#">Razors</a>
+                        </li>
+                        <li class="header__subitem">
+                            <a class="header__sublink" href="#">Shaving Supplies</a>
+                        </li>
+                        <li class="header__subitem">
+                            <a class="header__sublink" href="#">Gifts</a>
+                        </li>
+                        <li class="header__subitem">
+                            <a class="header__sublink" href="#">The Story</a>
+                        </li>
+                        <li class="header__subitem">
+                            <a class="header__sublink" href="#">The Difference</a>
+                        </li>
+                        <li class="header__subitem">
+                            <a class="header__sublink" href="#">More</a>
+                        </li>
+                    </ul>
+                    <li class="header__item">
+                        <a class="header__link" href="#">
+                            <img class="header__logo" src="../images/svg/logo.svg" alt="logo">
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__hidden--link" href="#">
+                            <img class="header__image" src="../images/svg/profile.svg" alt="profile">
+                        </a>
+                        <a class="header__link cart-open" href="#">
+                            <img class="header__image" src="../images/svg/cart.svg" alt="cart">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cart -->
+    <div class="cart">
+        <div class="cart__wrapper">
+            <h2 class="cart__title">Cart <img class="cart__close" src="../images/svg/close.svg" alt=""></h2>
+    <hr class="cart__hr">
+    <div class="cart__list">
+        <div class="cart__item">
+            <img class="cart__image" src="../images/png/product-small.png" alt="">
+            <div>
+                <h3 class="cart__heading">Core Razor</h3>
+                <p class="cart__info">Black</p>
+                <p class="cart__calculate"><span class="cart__decrease">-</span> 1 <span class="cart__increase">+</span></p>
+            </div>
+            <p class="cart__price">$24.99</p>
+        </div>
+        <div class="cart__item">
+            <img class="cart__image" src="../images/png/product-small.png" alt="">
+            <div>
+                <h3 class="cart__heading">Core Razor</h3>
+                <p class="cart__info">Black</p>
+                <p class="cart__calculate"><span class="cart__decrease">-</span> 1 <span class="cart__increase">+</span></p>
+            </div>
+            <p class="cart__price">$24.99</p>
+        </div>
+    </div>
+
+    <div class="cart__box">
+        <div class="cart__box--title">Add ons</div>
+        <div class="box__list">
+            <div class="box__item">
+                <img class="cart__image" src="../images/png/product-small.png" alt="product-small">
+                <div>
+                    <h3 class="box__title">Product Name <del>$39.95 </del> <span> $24.99</span></h3>
+                    <p class="box__info">$10 off when you add in the next 5 minutes</p>
+                    <a class="box__cta" href="#">Add</a>
+                </div>
+            </div>
+            <div class="box__item">
+                <img class="cart__image" src="../images/png/product-small.png" alt="product-small">
+                <div>
+                    <h3 class="box__title">Product Name <del>$39.95 </del> <span> $24.99</span></h3>
+                    <p class="box__info">$10 off when you add in the next 5 minutes</p>
+                    <a class="box__cta" href="#">Add</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart__footer">
+        <h3 class="cart__subtotal">Subtotal</h3>
+        <p class="cart__text"> You’re $1 away from Free Shipping</p>
+        <img class="cart__progressBar" src="../images/svg/progress-bar.svg" alt="progress-bar">
+        <a class="cart__checkout" href="#">Checkout</a>
+        <p class="cart__message">Starting at $23/mo with <img src="../images/svg/affirm.svg" alt="affirm"> . <span>Learn More</span></p>
+    </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <!-- <div class="hero__carousel"> -->
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper hero-wrapper">
+                    <div class="swiper-slide hero-slide">
+                        <img class="hero__image" src="../images/png/pdp-hero.png" alt="hero__image">
+                    </div>
+                    <div class="swiper-slide hero-slide">
+                        <img class="hero__image" src="../images/png/pdp-hero.png" alt="hero__image">
+                    </div>
+                    <div class="swiper-slide hero-slide">
+                        <img class="hero__image" src="../images/png/pdp-hero.png" alt="hero__image">
+                    </div>
+                </div>
+            </div>
+            <img class="hero__left" src="../images/svg/left-icon.svg" alt="left-icon">
+            <img class="hero__right" src="../images/svg/right-icon.svg" alt="right-icon">
+            <!-- </div> -->
+            <div class="hero__product--details">
+            <div class="swiper-scrollbar hero-scrollbar"></div>
+            <div class="product__details--wrapper">
+                <h3 class="product__title">Genesis Razor  <span>$24.99</span></h3>
+            <ul class="product__stars">
+                <li class="product__star">
+                    <img class="product__star--image" src="../images/svg/star.svg" alt="star">
+                </li>
+                <li class="product__star">
+                    <img class="product__star--image" src="../images/svg/star.svg" alt="star">
+                </li>
+                <li class="product__star">
+                    <img class="product__star--image" src="../images/svg/star.svg" alt="star">
+                </li>
+                <li class="product__star">
+                    <img class="product__star--image" src="../images/svg/star.svg" alt="star">
+                </li>
+                <li class="product__star">
+                    <img class="product__star--image" src="../images/svg/star.svg" alt="star">
+                </li>
+            </ul>
+            <p class="product__info">Financing as low as $23/month with  <img src="../images/svg/affirm.svg" alt="affirm"></p>
+            <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex .</p>
+            <p class="product__color--info">Color: <b> Gold</b></p>
+            <form class="carousels__form carousels__form2" action="#">
+                <p>
+                  <input type="radio" id="color_1" name="color" checked>
+                  <label class="test1" for="color_1"></label>
+                </p>
+                <p>
+                  <input type="radio" id="color_2" name="color">
+                  <label class="test2" for="color_2"></label>
+                </p>
+                <p>
+                  <input type="radio" id="color_3" name="color">
+                  <label class="test3" for="color_3"></label>
+                </p>
+              </form>
+            <p class="product__color--info" style="margin-bottom: 8px;">Select a plan: </p>
+            <input type="radio" id="select_1" name="plan" checked>
+            <label class="select_plan" for="select_1">Without a Refill</label>
+            <p class="select_plan--text"></p>
+            <input type="radio" id="select_2" name="plan">
+            <label class="select_plan" for="select_2">Plan</label>
+            <p class="select_plan--text"></p>
+            <div class="product__selection">
+                <input type="radio" name="menu-checkbox" id="item__checkbox" checked>
+                <div class="product__select--item item__label">
+                    <label class=" " for="item__checkbox">
+                        <img class="product__select--image" src="../images/svg/select.svg" alt="select">
+                        <h3 class="product__select--title">OneBlade Black tile after shave balm</h3>
+                        <p class="product__select--price">$3.50</p>
+                    </label>
+                </div>
+
+                <input type="radio" name="menu-checkbox" id="item__checkbox2">
+                <div class="product__select--item item__label2">
+                    <label for="item__checkbox2">
+                        <img class="product__select--image" src="../images/svg/select-2.svg" alt="select">
+                        <h3 class="product__select--title">OneBlade Black tile after shave balm</h3>
+                        <p class="product__select--price">$3.50</p>
+                    </label>
+                </div>
+
+                <input type="radio" name="menu-checkbox" id="item__checkbox3">
+                <div class="product__select--item item__label3">
+                    <label for="item__checkbox3">
+                        <img class="product__select--image" src="../images/svg/select-3.svg" alt="select">
+                        <h3 class="product__select--title">OneBlade Black tile after shave balm</h3>
+                        <p class="product__select--price">$3.50</p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="product__delivery">
+                <p class="product__color--info">Deliver every: </p>
+                <p class="product__delivery--info"><b>6 months</b> (I shave onece a week or less) <img class="product__tobottom--icon" src="../images/svg/toBottom.svg" alt="toBottom"></p>
+            </div>
+
+            <form class="product__form">
+                <div class="product__checkbox--div">
+                    <input type="checkbox" id="checkbox" checked>
+                    <label class="product__checkbox" for="checkbox">Add Engraving (+$10)</label>
+                    <span class="checkmark"></span>
+                </div>
+                <div class="product__input--wrapper">
+                    <input class="product__input" placeholder="Type your engraving here..." type="text">
+                </div>
+                    <p class="product__input--counter">16 characters maximum</p>
+            </form>
+
+            </div>
+            <a href="#" class="product__cta">Add to Cart</a>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner__wrapper">
+            <div class="banner__image--wrapper">
+                <img class="banner__image" src="../images/png/pdp-banner-image.png" alt="banner__image">
+                <img class="banner__image--hidden" src="../images/png/pdp-banner-image-mobile.png" alt="pdp-banner-image-mobile">
+            </div>
+            <div class="banner__richtext">
+                <div>
+                    <h3 class="banner__richtext--title">Lorem ipsum dolor</h3>
+                <p class="banner__richtext--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner__wrapper banner__wrapper--column">
+            <div class="banner__richtext banner__second--richtext">
+                <div>
+                    <h3 class="banner__richtext--title">Lorem ipsum dolor sit amet</h3>
+                <p class="banner__richtext--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+            <div class="banner__image--wrapper">
+                <img class="banner__image" src="../images/png/pdp-banner-image-2.png" alt="banner__image">
+                <img class="banner__image--hidden" src="../images/png/pdp-banner-image2-mobile.png" alt="pdp-banner-image-mobile">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="container">
+            <h3 class="carousel__info">You might also like</h3>
+            <div class="swiper carousel__swiper">
+                <div class="swiper-wrapper carousel__wrapper">
+                    <div class="swiper-slide carousel__item">
+                        <img class="carousel__image" src="../images/png/product-image.png" alt="carousel-image">
+                        <div class="carousel__item--div">
+                            <form class="carousels__form" action="#">
+                                <p>
+                                  <input type="radio" id="test1" name="radio-group" checked>
+                                  <label class="test1" for="test1"></label>
+                                </p>
+                                <p>
+                                  <input type="radio" id="test2" name="radio-group" disabled>
+                                  <label class="test2" for="test2"><span class="test2__span">|</span><span class="test2__span2">|</span></label>
+                                </p>
+                                <p>
+                                  <input type="radio" id="test3" name="radio-group">
+                                  <label class="test3" for="test3"></label>
+                                </p>
+                              </form>
+                            <h3 class="carousel__title">Product title</h3>
+                            <p class="carousel__price">From $99.00  <span><del> $150.00</del></span></p>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide carousel__item">
+                        <img class="carousel__image" src="../images/png/product-image.png" alt="carousel-image">
+                        <div class="carousel__item--div">
+                            <form class="carousels__form" action="#">
+                                <p>
+                                  <input type="radio" id="test7" name="radio-group" checked>
+                                  <label class="test1" for="test7"></label>
+                                </p>
+                                <p>
+                                  <input type="radio" id="test8" name="radio-group" disabled>
+                                  <label class="test2" for="test8"><span class="test2__span">|</span><span class="test2__span2">|</span></label>
+                                </p>
+                                <p>
+                                  <input type="radio" id="test9" name="radio-group">
+                                  <label class="test3" for="test9"></label>
+                                </p>
+                              </form>
+                            <h3 class="carousel__title">Product title</h3>
+                            <p class="carousel__price">From $99.00  <span><del> $150.00</del></span></p>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide carousel__item">
+                        <img class="carousel__image" src="../images/png/product-image.png" alt="carousel-image">
+                        <div class="carousel__item--div">
+                            <form class="carousels__form" action="#">
+                                <p>
+                                  <input type="radio" id="test4" name="radio-group" checked>
+                                  <label class="test1" for="test4"></label>
+                                </p>
+                                <p>
+                                  <input type="radio" id="test5" name="radio-group" disabled>
+                                  <label class="test2" for="test5"><span class="test2__span">|</span><span class="test2__span2">|</span></label>
+                                </p>
+                                <p>
+                                  <input type="radio" id="test6" name="radio-group">
+                                  <label class="test3" for="test6"></label>
+                                </p>
+                              </form>
+                            <h3 class="carousel__title">Product title</h3>
+                            <p class="carousel__price">From $99.00  <span><del> $150.00</del></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__lists">
+                    <div class="footer__item">
+                        <ul class="footer__item--icons">
+                            <li class="footer__icon">
+                                <img src="../images/svg/facebook.svg" alt="facebook">
+                            </li>
+                            <li class="footer__icon">
+                                <img src="../images/svg/instagram.svg" alt="instagram">
+                            </li>
+                            <li class="footer__icon">
+                                <img src="../images/svg/youtube.svg" alt="youtube">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <input class="footer__input" type="text" placeholder="Write your email ...">
+                        <button class="footer__button">join the family</button>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__item--text">The only way to discover exclusive deals, new product launches and more</p>
+                    </div>
+                    <img class="footer__gift" src="../images/svg/gift.svg" alt="gift">
+                    <p class="footer__hidden--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolorum.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

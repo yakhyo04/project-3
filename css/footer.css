@@ -1,0 +1,119 @@
+.footer{
+    background-color: #1C1C1E;
+    color: #BEBEBE;
+    padding: 40px 80px;
+}
+.footer__lists{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+.footer__item{
+    margin: auto;
+}
+.footer__item--icons{
+    width: 120px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.footer__input{
+    width: 264px;
+    height: 36px;
+    border-radius: 40px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+}
+.footer__button{
+    font-family: 'Gilroy-Bold';
+    width: 200px;
+    height: 38px;
+    border: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.16em;
+    margin-left: 16px;
+    background-color: #fff;
+}
+.footer__item--text{
+    width: 308px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer__gift{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 14px;
+    border-radius: 10px;
+}
+.footer__hidden--text{
+    width: 300px;
+    padding: 20px;
+    display: none;
+    position: fixed;
+    background-color: #000;
+    right: 60px;
+    opacity: 0.7;
+    bottom: 70px;
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+}
+
+@media (max-width: 1110px){
+    .footer__item--text{
+        width: auto;
+    }
+}
+
+
+@media (max-width: 684px){
+    .footer{
+        padding: 20px 40px;
+    }
+    .footer__lists{
+        width: auto;
+    }
+    .footer__input{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    .footer__button{
+        width: 100%;
+        margin: 0;
+    }
+    .footer__item{
+        width: auto;
+        margin-bottom: 16px;
+    }
+    .footer__gift{
+        width: 20px;
+        height: 20px;
+        bottom: 16px;
+        right: 16px;
+        padding: 9px;
+    }
+    .footer__hidden--text{
+        width: 40%;
+        padding: 10px;
+        right: 46px;
+        bottom: 40px;
+    }
+    .footer__input::placeholder{
+        padding-left: 30px;
+    }
+}
